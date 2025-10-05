@@ -1,3 +1,14 @@
+Configure Google OAuth (Signup page)
+
+1. Create a Google OAuth 2.0 Web client on Google Cloud Console and add your dev origin to Authorized JavaScript origins (e.g., http://localhost:5173).
+2. Copy the Client ID and set it in `frontend/.env`:
+
+```
+VITE_GOOGLE_CLIENT_ID=your-google-client-id.apps.googleusercontent.com
+```
+
+3. Restart `npm run dev` after adding the env var. Then open My Account → Sign up → click the Google button.
+
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
